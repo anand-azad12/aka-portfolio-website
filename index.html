@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a1cde894f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-sharp fa-solid fa-bars" onclick="openmenu()""></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span>Anand</span><br>Azad From New Delhi</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bluelight.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>A Mechanical Engineer with 5+ years of experience in technical training and teaching field,
+                        keen to leverage technical & management skills, creative and innovative ideas to obtain a
+                        responsible and challenging position in an organization. <br><br>
+                        An aggressively enterprising person with analytical and technical skills. Confident in
+                        customer-facing. Excellent Communication and interpersonal skills, backed up by the sound
+                        professional ability to work independently as well as by contributing to a team.<br><br>
+
+                        Life's Philosophy:<strong><em>
+                                "If you care about being thought credible and intelligent, do not use complex language
+                                where simpler language will do."</em></strong>
+                    <p><br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><strong>AutoCAD SOLIDWORKS</strong></span><br>Mould Design Press Tool Design</li>
+                            <li><span><strong>Web Development</strong></span><br>Web App Development</li>
+                            <li><span><strong>Tableau</strong></span><br>Interactive Dashboard</li>
+                            <li><span><strong>SQL Developer</strong></span><br>Optimize Queries</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><i class="fa-solid fa-calendar-days"></i> <span><strong>10/2017 -
+                                        Ongoing</strong></span><br>Training Officer <br>Nettur Technical Training
+                                Foundation Pvt. Ltd.</li>
+                            <li><i class="fa-solid fa-calendar-days"></i> <span><strong>11/2020 -
+                                        12/2022</strong></span><br>Freelance SME (Banking English) <br>Testbook Pvt.
+                                Ltd.</li>
+                            <li><i class="fa-solid fa-calendar-days"></i> <span><strong>07/2016 -
+                                        07/2017</strong></span><br>Mechanical Maintenance Engineer <br>Santi Enterprises
+                                Engineers & Contractors</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><strong>2016</strong></span><br>Graduated with 7.59 CGPA in Bachelor of
+                                Technology<br>Amity University</li>
+                            <li><span><strong>2012</strong></span><br>Scored 76% in 12th (PCMB)<br>D.A.V. Public School
+                            </li>
+                            <li><span><strong>2010</strong></span><br>Scored 9.6 CGPA in 10th <br>A.E.C. School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span><strong>Motherson Automotive Technologies &
+                                        Engineeering</strong></span><br>Training & Certification</li>
+                            <li><span><strong>Uranium Corporation Of India Ltd.</strong></span><br>Training &
+                                Certification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------Services------------ -->
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Tableau Dashboard</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi optio repellat qui magnam
+                        reprehenderit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi optio repellat qui magnam
+                        reprehenderit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi optio repellat qui magnam
+                        reprehenderit.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Portfolio--------------------- -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita, eos recusandae
+                            vero non fugiat!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita, eos recusandae
+                            vero non fugiat!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita, eos recusandae
+                            vero non fugiat!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---------------Contact-------------- -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> anandazad1993@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+) 91-7004691736</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anand-azad-3604aa141/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/anandazad1993/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/iamazadak/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/anand_azad13"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/anand-azad12"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/AnandCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © iamazadak.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw51W4RGgo4sH77nGeipPYVL1F9H2d33WF2-yhAxmxtdC2fMgIvpCpR-Tho24F40chr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
